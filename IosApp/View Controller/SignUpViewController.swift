@@ -63,15 +63,15 @@ class SignUpViewController: UIViewController {
             showError(error!)
             
         } else {
-            Auth.auth().createUser(withEmail: <#T##String#>, password: <#T##String#>) { (result, err) in
-                
-                if err != nil {
-                    self.showError("Error creating useer")
-                } else {
-                    
-                }
-                
-            }
+//            Auth.auth().createUser(withEmail: <#T##String#>, password: <#T##String#>) { (result, err) in
+//                
+//                if err != nil {
+//                    self.showError("Error creating useer")
+//                } else {
+//                    
+//                }
+//                
+//            }
         }
         
     }
