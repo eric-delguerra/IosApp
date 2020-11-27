@@ -7,6 +7,7 @@
 
 import UIKit
 import FirebaseAuth
+import Firebase
 
 
 class SignUpViewController: UIViewController {
@@ -63,19 +64,40 @@ class SignUpViewController: UIViewController {
             showError(error!)
             
         } else {
-//            Auth.auth().createUser(withEmail: <#T##String#>, password: <#T##String#>) { (result, err) in
-//                
-//                if err != nil {
-//                    self.showError("Error creating useer")
-//                } else {
-//                    
-//                }
-//                
-//            }
+            
+            let firstname = FirstNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let lastName = LastNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let email = EmailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let password = PasswordTextFiled.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            
+            Auth.auth().createUser(withEmail: email, password: password) { (result, err) in
+                
+                if err != nil {
+                    self.showError("Error creating useer")
+                } else {
+                    let db = Firestore.firestore()
+                    db.collection("users").addDocument(data: [
+                        "firstname": firstname,
+                        "lastname": lastName,
+                        "uid": result!.user.uid
+                    ]) { err in
+                        if error != nil {
+                            self.showError("Error saving user data")
+                        }
+                    }
+                    self.transitionToHome()
+                }
+                
+            }
         }
         
     }
-    
+    func transitionToHome() {
+        let homeVC = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController
+        
+        view.window?.rootViewController = homeVC
+        view.window?.makeKeyAndVisible()
+    }
     func showError(_ message : String) {
         ErrorLabel.text = message
         ErrorLabel.alpha = 1
