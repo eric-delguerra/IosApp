@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E0C71B12578DCAD006EAC0C /* PlantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0C71B02578DCAD006EAC0C /* PlantViewController.swift */; };
 		6E50400C256E4B3200F1A527 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E50400B256E4B3200F1A527 /* AppDelegate.swift */; };
 		6E50400E256E4B3200F1A527 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E50400D256E4B3200F1A527 /* SceneDelegate.swift */; };
 		6E504010256E4B3200F1A527 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E50400F256E4B3200F1A527 /* ViewController.swift */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		361F8FBACF6DEE06EE869BAB /* Pods-IosApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosApp.debug.xcconfig"; path = "Target Support Files/Pods-IosApp/Pods-IosApp.debug.xcconfig"; sourceTree = "<group>"; };
 		436731546DAC31BE8A7D6559 /* Pods-IosApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosApp.release.xcconfig"; path = "Target Support Files/Pods-IosApp/Pods-IosApp.release.xcconfig"; sourceTree = "<group>"; };
+		6E0C71B02578DCAD006EAC0C /* PlantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantViewController.swift; sourceTree = "<group>"; };
 		6E504008256E4B3200F1A527 /* IosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E50400B256E4B3200F1A527 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E50400D256E4B3200F1A527 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				6E504023256E4B7200F1A527 /* LogInViewController.swift */,
 				6E504026256E4B7F00F1A527 /* HomeViewController.swift */,
 				6E50400F256E4B3200F1A527 /* ViewController.swift */,
+				6E0C71B02578DCAD006EAC0C /* PlantViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				6E504109256FBDFF00F1A527 /* Constants.swift in Sources */,
 				6E50400E256E4B3200F1A527 /* SceneDelegate.swift in Sources */,
 				6E504027256E4B7F00F1A527 /* HomeViewController.swift in Sources */,
+				6E0C71B12578DCAD006EAC0C /* PlantViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
