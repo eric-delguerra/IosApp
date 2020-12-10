@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6E0C71B12578DCAD006EAC0C /* PlantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0C71B02578DCAD006EAC0C /* PlantViewController.swift */; };
+		6E0C71B42578FBF8006EAC0C /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0C71B32578FBF8006EAC0C /* Plant.swift */; };
 		6E50400C256E4B3200F1A527 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E50400B256E4B3200F1A527 /* AppDelegate.swift */; };
 		6E50400E256E4B3200F1A527 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E50400D256E4B3200F1A527 /* SceneDelegate.swift */; };
 		6E504010256E4B3200F1A527 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E50400F256E4B3200F1A527 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 		6E50402C256E688C00F1A527 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6E50402B256E688C00F1A527 /* GoogleService-Info.plist */; };
 		6E504109256FBDFF00F1A527 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E504108256FBDFF00F1A527 /* Constants.swift */; };
 		6E5041102570F85100F1A527 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E50410F2570F85100F1A527 /* CollectionViewCell.swift */; };
+		6E63B909257E1F87005E04E4 /* AddPlantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E63B908257E1F87005E04E4 /* AddPlantViewController.swift */; };
 		C54EE16810A729242E6BA37A /* Pods_IosApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCC5ECD9F848D5DBF43019B1 /* Pods_IosApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +29,7 @@
 		361F8FBACF6DEE06EE869BAB /* Pods-IosApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosApp.debug.xcconfig"; path = "Target Support Files/Pods-IosApp/Pods-IosApp.debug.xcconfig"; sourceTree = "<group>"; };
 		436731546DAC31BE8A7D6559 /* Pods-IosApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosApp.release.xcconfig"; path = "Target Support Files/Pods-IosApp/Pods-IosApp.release.xcconfig"; sourceTree = "<group>"; };
 		6E0C71B02578DCAD006EAC0C /* PlantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantViewController.swift; sourceTree = "<group>"; };
+		6E0C71B32578FBF8006EAC0C /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
 		6E504008256E4B3200F1A527 /* IosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E50400B256E4B3200F1A527 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E50400D256E4B3200F1A527 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +44,7 @@
 		6E50402B256E688C00F1A527 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6E504108256FBDFF00F1A527 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		6E50410F2570F85100F1A527 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		6E63B908257E1F87005E04E4 /* AddPlantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlantViewController.swift; sourceTree = "<group>"; };
 		BCC5ECD9F848D5DBF43019B1 /* Pods_IosApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IosApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -95,6 +99,7 @@
 				6E504016256E4B3500F1A527 /* LaunchScreen.storyboard */,
 				6E504019256E4B3500F1A527 /* Info.plist */,
 				6E50402B256E688C00F1A527 /* GoogleService-Info.plist */,
+				6E0C71B32578FBF8006EAC0C /* Plant.swift */,
 			);
 			path = IosApp;
 			sourceTree = "<group>";
@@ -107,6 +112,7 @@
 				6E504026256E4B7F00F1A527 /* HomeViewController.swift */,
 				6E50400F256E4B3200F1A527 /* ViewController.swift */,
 				6E0C71B02578DCAD006EAC0C /* PlantViewController.swift */,
+				6E63B908257E1F87005E04E4 /* AddPlantViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -250,6 +256,8 @@
 				6E504024256E4B7200F1A527 /* LogInViewController.swift in Sources */,
 				6E504109256FBDFF00F1A527 /* Constants.swift in Sources */,
 				6E50400E256E4B3200F1A527 /* SceneDelegate.swift in Sources */,
+				6E0C71B42578FBF8006EAC0C /* Plant.swift in Sources */,
+				6E63B909257E1F87005E04E4 /* AddPlantViewController.swift in Sources */,
 				6E504027256E4B7F00F1A527 /* HomeViewController.swift in Sources */,
 				6E0C71B12578DCAD006EAC0C /* PlantViewController.swift in Sources */,
 			);

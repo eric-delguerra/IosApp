@@ -8,12 +8,18 @@
 import UIKit
 
 class PlantViewController: UIViewController {
+    
+    @IBOutlet weak var plantImage: UIImageView!
+    
+    var imgplant: UIImage!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        plantImage.image = imgplant
         // Do any additional setup after loading the view.
     }
+
     
 
 }
