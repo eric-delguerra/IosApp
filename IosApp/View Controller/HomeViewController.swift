@@ -46,10 +46,29 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
                         if let err = err {
                             print("Error getting documents: \(err)")
                         } else {
+                            self.plants.removeAll()
                             for document in querySnapshot!.documents {
 //                                print("\(document.documentID) => \(document.data())")
                                 let infos = document.data()
-                                self.plants.append(Plant(name: infos["plantName"]!, description: infos["description"]!, image: self.images[0]!, waterTime: infos["waterTime"]!, waterNeed : infos["waterNeed"]!, sunNeed: infos["sunNeed"]!))
+                                
+                                let plantName = infos["plantName"] as! String
+
+                                let description = infos["description"] as! String
+
+                                let image = self.images[0]! as! UIImage
+
+                                let waterTime = infos["waterTime"] as! String
+
+                                let waterNeed = infos["waterNeed"] as! String
+
+                                let sunNeed = infos["sunNeed"] as! String
+
+                                let plant = Plant(name: plantName, description: description, image: image, waterTime: waterTime, waterNeed : waterNeed, sunNeed: sunNeed)
+
+                                self.plants.append(plant)
+                            }
+                            DispatchQueue.main.async {
+                                self.collectionView.reloadData()
                             }
                         }
                 }
@@ -81,8 +100,10 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let plantVC = storyboard.instantiateViewController(identifier: "plant") as! PlantViewController
         plantVC.imgplant = plants[indexPath.row].image
+        plantVC.rap = plants[indexPath.row].waterTime
+        plantVC.lastArrosage = plants[indexPath.row].waterTime
+        plantVC.sunneed = plants[indexPath.row].sunNeed
         // set les variables ici
-        // plantVC.name
         self.navigationController?.pushViewController(plantVC, animated: true)
     }
 

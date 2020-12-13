@@ -589,14 +589,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5qc-kl-Rus">
-                                <rect key="frame" x="50" y="577" width="344" height="175"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description qui ne marche pas" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBE-5Q-mjZ">
+                                <rect key="frame" x="50" y="582" width="314" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="s7c-7X-uYx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -610,8 +608,8 @@
                             <constraint firstItem="2Ak-WO-vqf" firstAttribute="leading" secondItem="7zs-se-DM9" secondAttribute="trailing" constant="8" symbolic="YES" id="I73-a2-N1P"/>
                             <constraint firstItem="deC-55-JCl" firstAttribute="top" secondItem="2Ak-WO-vqf" secondAttribute="bottom" constant="33.5" id="Ihf-bp-g3d"/>
                             <constraint firstItem="4dQ-gf-dac" firstAttribute="top" secondItem="deC-55-JCl" secondAttribute="bottom" constant="34" id="JYp-lC-p9D"/>
-                            <constraint firstItem="s7c-7X-uYx" firstAttribute="bottom" secondItem="5qc-kl-Rus" secondAttribute="bottom" constant="110" id="Jn0-lR-iEV"/>
                             <constraint firstItem="7zs-se-DM9" firstAttribute="leading" secondItem="s7c-7X-uYx" secondAttribute="leading" constant="40" id="K7h-YR-3Ed"/>
+                            <constraint firstItem="JBE-5Q-mjZ" firstAttribute="top" secondItem="qeN-ye-7i0" secondAttribute="bottom" constant="30" id="KOq-Uk-FqD"/>
                             <constraint firstItem="s7c-7X-uYx" firstAttribute="bottom" secondItem="2Ak-WO-vqf" secondAttribute="bottom" constant="497" id="KmR-8W-lCa"/>
                             <constraint firstItem="bSL-rz-2qJ" firstAttribute="top" secondItem="iqh-Hw-AbG" secondAttribute="bottom" constant="5" id="OiN-tg-vDT"/>
                             <constraint firstItem="bsz-JJ-15u" firstAttribute="leading" secondItem="s7c-7X-uYx" secondAttribute="leading" constant="20" id="OtW-Ik-bpa"/>
@@ -620,27 +618,29 @@
                             <constraint firstItem="bSL-rz-2qJ" firstAttribute="leading" secondItem="s7c-7X-uYx" secondAttribute="leading" constant="40" id="Rhz-2c-20a"/>
                             <constraint firstItem="bsz-JJ-15u" firstAttribute="top" secondItem="s7c-7X-uYx" secondAttribute="top" id="TWr-9w-Zak"/>
                             <constraint firstItem="bSL-rz-2qJ" firstAttribute="top" secondItem="iqh-Hw-AbG" secondAttribute="bottom" constant="5" id="TY2-6j-kET"/>
-                            <constraint firstItem="5qc-kl-Rus" firstAttribute="leading" secondItem="s7c-7X-uYx" secondAttribute="leading" constant="50" id="Ufl-LU-CZk"/>
+                            <constraint firstItem="JBE-5Q-mjZ" firstAttribute="leading" secondItem="s7c-7X-uYx" secondAttribute="leading" constant="50" id="b9O-5O-xhN"/>
                             <constraint firstItem="qeN-ye-7i0" firstAttribute="leading" secondItem="s7c-7X-uYx" secondAttribute="leading" constant="40" id="baZ-hk-566"/>
                             <constraint firstItem="aJH-Mh-Bhm" firstAttribute="top" secondItem="bsz-JJ-15u" secondAttribute="bottom" constant="25" id="gVl-0v-whl"/>
-                            <constraint firstItem="s7c-7X-uYx" firstAttribute="trailing" secondItem="5qc-kl-Rus" secondAttribute="trailing" constant="20" id="hmf-Hw-3cM"/>
                             <constraint firstItem="aJH-Mh-Bhm" firstAttribute="leading" secondItem="s7c-7X-uYx" secondAttribute="leading" constant="20" id="hqN-3N-eSe"/>
                             <constraint firstItem="iqh-Hw-AbG" firstAttribute="leading" secondItem="s7c-7X-uYx" secondAttribute="leading" constant="40" id="iKP-iH-RuA"/>
                             <constraint firstItem="qeN-ye-7i0" firstAttribute="top" secondItem="4dQ-gf-dac" secondAttribute="bottom" constant="47.5" id="mtp-e4-X4G"/>
                             <constraint firstItem="s7c-7X-uYx" firstAttribute="bottom" secondItem="7zs-se-DM9" secondAttribute="bottom" constant="484" id="pOC-xp-m4z"/>
                             <constraint firstItem="deC-55-JCl" firstAttribute="leading" secondItem="iqh-Hw-AbG" secondAttribute="trailing" constant="8" symbolic="YES" id="sGj-9X-1H0"/>
-                            <constraint firstItem="5qc-kl-Rus" firstAttribute="top" secondItem="qeN-ye-7i0" secondAttribute="bottom" constant="25" id="uSC-kG-hNA"/>
-                            <constraint firstItem="5qc-kl-Rus" firstAttribute="top" secondItem="qeN-ye-7i0" secondAttribute="bottom" constant="25" id="zMg-48-rs9"/>
+                            <constraint firstItem="s7c-7X-uYx" firstAttribute="trailing" secondItem="JBE-5Q-mjZ" secondAttribute="trailing" constant="50" id="y5W-1y-8KY"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="QEP-et-gWR"/>
                     <connections>
+                        <outlet property="description" destination="JBE-5Q-mjZ" id="Cs0-RB-hdY"/>
+                        <outlet property="lastWatered" destination="2Ak-WO-vqf" id="Vwe-1U-LO0"/>
                         <outlet property="plantImage" destination="bsz-JJ-15u" id="bUM-dU-aQR"/>
+                        <outlet property="rappel" destination="deC-55-JCl" id="2AD-Gj-H54"/>
+                        <outlet property="sunNeed" destination="4dQ-gf-dac" id="he8-Bg-wW9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DQe-tQ-pgs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4644.927536231884" y="85.714285714285708"/>
+            <point key="canvasLocation" x="4643.4782608695659" y="85.714285714285708"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Pud-2Q-Ac2">

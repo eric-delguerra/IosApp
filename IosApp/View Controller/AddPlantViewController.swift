@@ -32,10 +32,11 @@ class AddPlantViewController: UIViewController, UINavigationControllerDelegate, 
         Auth.auth().addStateDidChangeListener { (auth, user) in
             if Auth.auth().currentUser != nil {
                 self.userId = user?.uid
+                self.test.text = user?.displayName
             } else {
                 self.test.text = "no user is signed"
             }
-            print("truc" + self.userId)
+            //print("truc" + self.userId)
         }
     }
     
